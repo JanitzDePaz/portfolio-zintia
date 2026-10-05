@@ -13,7 +13,7 @@ main {
 }
 
 #portada {
-    height: 100vh;
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
@@ -41,9 +41,9 @@ main {
 
 #textoPortfolio {
   position: absolute;
-  bottom: 10px;
-  left: -60px;
-  max-width: 1200px;
+  bottom: 100px;
+  left: 100px;
+  width: 600px;
 }
 
 #enlaceConoceme {
@@ -93,24 +93,42 @@ main {
 }
 
 .contenedorSobreMi img {
-    height: 100%;
-  object-fit:contain;
+  height: 100%;
+  object-fit: contain;
   flex-shrink: 0;
 }
 
 .parrafoSobreMi {
-    height: 100%;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 30px;
+  height: 100%;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
 }
 
-.parrafoSobreMi p{
-    font-family: "Inter";
-    font-weight: 500;
-    font-size: 1.2rem;
+.parrafoSobreMi p {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
-@media
+@media (max-width: 1200px) {
+  #muñeca{
+    width: 300px;
+  }
+
+  #textoPortfolio {
+    width: 300px;
+  }
+  #enlaceConoceme {
+    display: none;
+  }
+
+  #portada header a {
+    font-size: 2rem;
+  }
+  .parrafoSobreMi p{
+    font-size: 0.3rem;
+  }
+}
