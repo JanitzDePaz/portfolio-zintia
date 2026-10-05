@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Anton";
+  color: #eb0e87;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+#portada {
+    height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#muñeca {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 70vw;
+  aspect-ratio: 2/3;
+  z-index: -1;
+}
+
+#portada header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#portada header a {
+  text-decoration: none;
+  font-size: 5rem;
+}
+
+#textoPortfolio {
+  position: absolute;
+  bottom: 10px;
+  left: -60px;
+  max-width: 1200px;
+}
+
+#enlaceConoceme {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 60px;
+  bottom: 0;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+#rectangulo {
+  width: 400px;
+  height: 30px;
+  background-color: #eb0e87;
+}
+
+#flechaAbajo {
+  width: 200px;
+  align-self: end;
+  margin-top: 100px;
+}
+
+#sobreMi {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  height: 50%;
+  height: 100vh;
+}
+
+#sobreMi h1 {
+  text-align: center;
+  font-size: 6rem;
+  padding: 10px;
+}
+
+.contenedorSobreMi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-inline: 40px;
+  height: 50vh;
+}
+
+.contenedorSobreMi img {
+    height: 100%;
+  object-fit:contain;
+  flex-shrink: 0;
+}
+
+.parrafoSobreMi {
+    height: 100%;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.parrafoSobreMi p{
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+@media
