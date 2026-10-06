@@ -10,6 +10,7 @@
 main {
   display: flex;
   flex-direction: column;
+  gap: 30px;
 }
 
 #portada {
@@ -127,4 +128,28 @@ main {
   font-family: "Inter";
   font-weight: 600;
   border-radius: 10px;
+}
+
+#proyectos{
+  background-color: #eb0e87;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 30px;
+}
+#proyectos h1{
+  color: white;
+}
+
+.contenedoresProyectos{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 20px;
+}
+
+.contenedoresProyectos img{
+  width: 100%;
 }
