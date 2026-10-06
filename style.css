@@ -17,6 +17,7 @@ main {
   height: 100vh;
   position: relative;
   overflow: hidden;
+  padding: 20px;
 }
 
 #muñeca {
@@ -24,53 +25,34 @@ main {
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-  width: 70vw;
+  height: 70vh;
   aspect-ratio: 2/3;
   z-index: -1;
 }
 
-#portada header {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-#portada header a {
-  text-decoration: none;
-  font-size: 5rem;
-}
-
 #textoPortfolio {
   position: absolute;
-  bottom: 100px;
-  left: 100px;
-  width: 600px;
+  bottom: 10%;
+  left: 50%;
+  translate: -50%;
+  width: 70vw;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  text-decoration: none;
+  font-size: clamp(1.2rem, 4vw, 2.5rem);
 }
 
 #enlaceConoceme {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  right: 60px;
-  bottom: 0;
-  font-size: 3rem;
-  text-decoration: none;
+  display: none;
 }
 
-#rectangulo {
-  width: 400px;
-  height: 30px;
-  background-color: #eb0e87;
-}
-
-#flechaAbajo {
-  width: 200px;
-  align-self: end;
-  margin-top: 100px;
-}
-
-
-#sobreMi{
+#sobreMi {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -78,7 +60,7 @@ main {
   gap: 20px;
 }
 
-.contenedorSobreMi{
+.contenedorSobreMi {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,34 +68,35 @@ main {
   gap: 20px;
 }
 
-.contenedorSobreMi img, .contenedorSobreMi div{
+.contenedorSobreMi img,
+.contenedorSobreMi div {
   width: 80%;
 }
 
-.parrafoSobreMi{
+.parrafoSobreMi {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.parrafoSobreMi p{
+.parrafoSobreMi p {
   font-family: "Inter";
 }
 
-.skills{
+.skills {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
 }
 
-.contenedorSkills{
+.contenedorSkills {
   text-align: center;
   display: flex;
   gap: 10px;
   flex-direction: column;
 }
 
-.contenedorSkills div{
+.contenedorSkills div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,7 +104,7 @@ main {
   flex-wrap: wrap;
 }
 
-.contenedorSkills div span{
+.contenedorSkills div span {
   background-color: #eb0e87;
   color: white;
   padding: 8px;
@@ -130,7 +113,7 @@ main {
   border-radius: 10px;
 }
 
-#proyectos{
+#proyectos {
   background-color: #eb0e87;
   display: flex;
   flex-direction: column;
@@ -138,11 +121,11 @@ main {
   gap: 20px;
   padding-top: 30px;
 }
-#proyectos h1{
+#proyectos h1 {
   color: white;
 }
 
-.contenedoresProyectos{
+.contenedoresProyectos {
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -151,54 +134,83 @@ main {
   gap: 20px;
 }
 
-.contenedoresProyectos div{
+.contenedoresProyectos div {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.contenedoresProyectos div p{
+.contenedoresProyectos div p {
   font-family: "Inter";
 }
 
-.contenedoresProyectos img{
+.contenedoresProyectos img {
   width: 100%;
   aspect-ratio: 2 / 1;
-  object-fit:cover;
+  object-fit: cover;
 }
 
-@media (min-width: 720px){
-  h1{
+@media (min-width: 720px) {
+  h1 {
     font-size: 4rem;
   }
 
-  #sobreMi{
+  #sobreMi {
     height: 100vh;
     justify-content: center;
   }
 
-  .contenedorSobreMi{
+  .contenedorSobreMi {
     flex-direction: row;
     width: 70vw;
   }
-  .contenedorSobreMi img{
+  .contenedorSobreMi img {
     width: 25vw;
   }
-  .parrafoSobreMi p{
+  .parrafoSobreMi p {
     font-size: 0.8rem;
   }
 
-  .contenedorSkills div{
+  .contenedorSkills div {
     max-width: 30vw;
+  }
+
+  #textoPortfolio {
+    position: absolute;
+    left: 35%;
+    translate: -50%;
+    width: 450px;
+  }
+  #muñeca {
+    height: 130vh;
+    aspect-ratio: 2/3;
+    z-index: -1;
+  }
+
+  #enlaceConoceme {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    text-decoration: none;
+  }
+  #enlaceConoceme h2 {
+    font-size: 3.5rem;
+  }
+
+  #rectangulo {
+    width: 300px;
+    height: 30px;
+    background-color: #eb0e87;
   }
 }
 
-@media (min-width: 1200px){
-  .parrafoSobreMi p{
+@media (min-width: 1200px) {
+  .parrafoSobreMi p {
     font-size: 1.2rem;
   }
-  .contenedorSkills div span{
-  padding: 12px;
-  
+  .contenedorSkills div span {
+    padding: 12px;
   }
 }
