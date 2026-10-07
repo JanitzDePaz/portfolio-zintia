@@ -150,6 +150,41 @@ header a {
   object-fit: cover;
 }
 
+
+#contacto{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contenedorContacto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.enlaceContacto{
+  font-size: clamp(1rem, 3vw, 4rem);
+}
+
+.enlaceSinEstilo{
+  text-decoration: none;
+}
+
+.textoContacto{
+  width: 100%;
+  text-align: center;
+  font-size: clamp(5rem, 25vw, 30rem);
+}
+
+.enlaceVolverArriba{
+  font-size: clamp(3rem, 8vw, 12rem);
+  text-align: center;
+  text-decoration: none;
+}
+
+
 @media (min-width: 720px) {
   h1 {
     font-size: clamp(4rem, 6vw, 7rem);
