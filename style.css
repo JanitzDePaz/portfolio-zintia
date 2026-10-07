@@ -152,7 +152,7 @@ header a {
 
 @media (min-width: 720px) {
   h1 {
-    font-size: 4rem;
+    font-size: clamp(4rem, 6vw, 7rem);
   }
 
   #sobreMi {
@@ -204,6 +204,30 @@ header a {
     height: 30px;
     background-color: #eb0e87;
   }
+
+  .contenedoresProyectos {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    height: 80vh;
+  }
+  .contenedoresProyectos div {
+    padding: 50px;
+    justify-content: space-between;
+    width: 40%;
+  }
+  .contenedoresProyectos h2{
+    font-size: clamp(3rem, 4vw, 6rem);
+  }
+
+.contenedoresProyectos div p {
+  font-family: "Inter";
+  font-size: clamp(1.5rem, 2vw, 3rem);
+}
+
+.contenedoresProyectos img {
+  object-fit: cover;
+}
 }
 
 @media (min-width: 1200px) {
