@@ -240,6 +240,10 @@ header a {
     background-color: #eb0e87;
   }
 
+  #proyectos{
+    gap: 60px;
+  }
+
   .contenedoresProyectos {
     flex-direction: row;
     justify-content: space-between;
@@ -261,7 +265,7 @@ header a {
 }
 
 .contenedoresProyectos img {
-  object-fit: cover;
+  width: 50%;
 }
 }
 
