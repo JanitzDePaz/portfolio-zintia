@@ -203,11 +203,15 @@ header a {
     width: 25vw;
   }
   .parrafoSobreMi p {
-    font-size: 0.8rem;
+    font-size: clamp(1rem, 1.5vw, 1.8rem);
   }
 
   .contenedorSkills div {
     max-width: 30vw;
+  }
+
+  .contenedorSkills div span{
+    font-size: clamp(1rem, 1.5vw, 1.8rem);
   }
 
   #textoPortfolio {
@@ -267,13 +271,4 @@ header a {
 .contenedoresProyectos img {
   width: 50%;
 }
-}
-
-@media (min-width: 1200px) {
-  .parrafoSobreMi p {
-    font-size: 1.2rem;
-  }
-  .contenedorSkills div span {
-    padding: 12px;
-  }
 }
