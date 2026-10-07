@@ -119,7 +119,7 @@ header a {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  padding-top: 30px;
+  padding-block: 30px;
 }
 #proyectos h1 {
   color: white;
