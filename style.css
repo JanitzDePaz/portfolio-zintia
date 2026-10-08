@@ -87,30 +87,35 @@ header a {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+
 }
 
 .contenedorSkills {
   text-align: center;
   display: flex;
-  gap: 10px;
-  flex-direction: column;
-}
-
-.contenedorSkills div {
-  display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contenedorSkills div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .contenedorSkills div span {
   background-color: #eb0e87;
   color: white;
   padding: 8px;
+  width: 32%;
   font-family: "Inter";
   font-weight: 600;
   border-radius: 10px;
+  font-size: clamp(0.5rem, 2vw, 3rem);
 }
 
 #proyectos {
@@ -206,12 +211,23 @@ header a {
     font-size: clamp(1rem, 1.5vw, 1.8rem);
   }
 
-  .contenedorSkills div {
-    max-width: 30vw;
+.skills{
+  width: 100%;
+  justify-content: center;
+  gap: 10%;
+}
+
+  .contenedorSkills{
+    width: 40%;
+    justify-content: ce;
+  }
+
+  .contenedorSkills h2{
+    font-size: clamp(1rem, 2vw, 3rem);
   }
 
   .contenedorSkills div span{
-    font-size: clamp(1rem, 1.5vw, 1.8rem);
+    font-size: clamp(0.6rem, 1.2vw, 2rem);
   }
 
   #textoPortfolio {
