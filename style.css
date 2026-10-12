@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Anton";
-  color: #eb0e87;
 }
 
 main {
@@ -38,13 +37,16 @@ main {
   width: 70vw;
 }
 
-header {
+#portada header {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
-header a {
+#portada header a {
   text-decoration: none;
+  font-family: "Anton";
+  color: #eb0e87;
   font-size: clamp(1.2rem, 4vw, 2.5rem);
 }
 
@@ -58,6 +60,11 @@ header a {
   flex-direction: column;
   padding: 20px;
   gap: 20px;
+}
+
+#sobreMi h1 {
+  font-family: "Anton";
+  color: #eb0e87;
 }
 
 .contenedorSobreMi {
@@ -81,13 +88,13 @@ header a {
 
 .parrafoSobreMi p {
   font-family: "Inter";
+  color: #eb0e87;
 }
 
 .skills {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-
 }
 
 .contenedorSkills {
@@ -98,6 +105,11 @@ header a {
   gap: 10px;
   flex-direction: column;
   width: 100%;
+}
+
+.contenedorSkills h2 {
+  font-family: "Anton";
+  color: #eb0e87;
 }
 
 .contenedorSkills div {
@@ -126,7 +138,9 @@ header a {
   gap: 20px;
   padding-block: 30px;
 }
+
 #proyectos h1 {
+  font-family: "Anton";
   color: white;
 }
 
@@ -145,8 +159,18 @@ header a {
   gap: 10px;
 }
 
+.contenedoresProyectos div a {
+  text-decoration: none;
+}
+
+.contenedoresProyectos div h2 {
+  font-family: "Anton";
+  color: #eb0e87;
+}
+
 .contenedoresProyectos div p {
   font-family: "Inter";
+  color: #eb0e87;
 }
 
 .contenedoresProyectos img {
@@ -155,43 +179,160 @@ header a {
   object-fit: cover;
 }
 
-
-#contacto{
+#contacto {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.contenedorContacto{
+.contenedorContacto {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5%;
 }
 
-.enlaceContacto{
+.enlaceContacto {
+  font-family: "Anton";
+  color: #eb0e87;
   font-size: clamp(1rem, 3vw, 4rem);
 }
 
-.enlaceSinEstilo{
+.enlaceSinEstilo {
   text-decoration: none;
 }
 
-.textoContacto{
+.textoContacto {
+  font-family: "Anton";
+  color: #eb0e87;
   width: 100%;
   text-align: center;
   font-size: clamp(5rem, 25vw, 30rem);
 }
 
-.enlaceVolverArriba{
+.enlaceVolverArriba {
+  font-family: "Anton";
+  color: #eb0e87;
   font-size: clamp(3rem, 8vw, 12rem);
   text-align: center;
   text-decoration: none;
 }
 
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.main-header a {
+  text-decoration: none;
+  font-family: "Anton";
+  color: #eb0e87;
+  font-size: clamp(1.2rem, 4vw, 2.5rem);
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.branding-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.page-title {
+  font-family: "Anton";
+  color: #eb0e87;
+  font-size: clamp(3.5rem, 8vw, 6.5rem);
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 0;
+}
+
+.intro-description {
+  font-family: "Inter", sans-serif;
+  color: #eb0e87;
+  font-size: clamp(1.2rem, 1.8vw, 1.875rem);
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.proyecto-card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.proyecto-titulo {
+  font-family: "Anton";
+  color: #eb0e87;
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+  text-transform: uppercase;
+}
+
+.img-portada,
+.img-bottom {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 1730 / 910;
+  margin: 0 auto;
+  object-fit: cover;
+  display: block;
+}
+
+.proyecto-grid-medio {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.proyecto-grid-medio img {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 830 / 830;
+  margin: 0 auto;
+  object-fit: cover;
+  display: block;
+}
+
+.proyecto-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.proyecto-texto p {
+  font-family: "Inter", sans-serif;
+  color: #333333;
+  font-size: clamp(1rem, 1.5vw, 1.5625rem);
+  line-height: 1.4;
+}
+
+.galeria-carrusel {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.galeria-carrusel img {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 1730 / 910;
+  margin: 0 auto;
+  object-fit: cover;
+  display: block;
+}
+
 
 @media (min-width: 720px) {
-  h1 {
+  #sobreMi h1 {
     font-size: clamp(4rem, 6vw, 7rem);
   }
 
@@ -204,29 +345,30 @@ header a {
     flex-direction: row;
     width: 70vw;
   }
+
   .contenedorSobreMi img {
     width: 25vw;
   }
+
   .parrafoSobreMi p {
     font-size: clamp(1rem, 1.5vw, 1.8rem);
   }
 
-.skills{
-  width: 100%;
-  justify-content: center;
-  gap: 10%;
-}
-
-  .contenedorSkills{
-    width: 40%;
-    justify-content: ce;
+  .skills {
+    width: 100%;
+    justify-content: center;
+    gap: 10%;
   }
 
-  .contenedorSkills h2{
+  .contenedorSkills {
+    width: 40%;
+  }
+
+  .contenedorSkills h2 {
     font-size: clamp(1rem, 2vw, 3rem);
   }
 
-  .contenedorSkills div span{
+  .contenedorSkills div span {
     font-size: clamp(0.6rem, 1.2vw, 2rem);
   }
 
@@ -236,6 +378,7 @@ header a {
     translate: -50%;
     width: 450px;
   }
+
   #muñeca {
     height: 130vh;
     aspect-ratio: 2/3;
@@ -250,7 +393,10 @@ header a {
     right: 5%;
     text-decoration: none;
   }
+
   #enlaceConoceme h2 {
+    font-family: "Anton";
+    color: #eb0e87;
     font-size: 3.5rem;
   }
 
@@ -260,7 +406,7 @@ header a {
     background-color: #eb0e87;
   }
 
-  #proyectos{
+  #proyectos {
     gap: 60px;
   }
 
@@ -270,21 +416,63 @@ header a {
     padding: 0;
     height: 80vh;
   }
+
   .contenedoresProyectos div {
     padding: 50px;
     justify-content: space-between;
     width: 40%;
   }
-  .contenedoresProyectos h2{
+
+  .contenedoresProyectos div h2 {
     font-size: clamp(3rem, 4vw, 6rem);
   }
 
-.contenedoresProyectos div p {
-  font-family: "Inter";
-  font-size: clamp(1.5rem, 2vw, 3rem);
-}
+  .contenedoresProyectos div p {
+    font-size: clamp(1.5rem, 2vw, 3rem);
+  }
 
-.contenedoresProyectos img {
-  width: 50%;
-}
+  .contenedoresProyectos img {
+    width: 50%;
+  }
+
+  .branding-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .page-title {
+    font-family: "Anton";
+    color: #eb0e87;
+    font-size: clamp(3.5rem, 8vw, 6.5rem);
+    line-height: 1;
+    margin: 0;
+  }
+
+  .intro-description {
+    font-family: "Inter", sans-serif;
+    color: #eb0e87;
+    font-size: clamp(1.2rem, 1.8vw, 1.875rem);
+    line-height: 1.3;
+    text-align: left;
+    max-width: 500px;
+    margin-top: 2.2rem;
+    margin-left: auto;
+  }
+
+  .proyecto-grid-medio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .proyecto-grid-medio img {
+    max-width: 100%;
+  }
+
+  .proyecto-texto p {
+    font-size: clamp(1rem, 1.5vw, 1.5625rem);
+  }
 }
