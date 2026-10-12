@@ -310,9 +310,78 @@ main {
 
 .proyecto-texto p {
   font-family: "Inter", sans-serif;
-  color: #333333;
+  color: #654436;
   font-size: clamp(1rem, 1.5vw, 1.5625rem);
   line-height: 1.4;
+}
+
+.bloque-logos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.bloque-logos img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  object-fit: contain;
+  aspect-ratio: auto;
+}
+
+.fondo-negro {
+  background-color: #000000;
+}
+
+.dolasol-logos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.dolasol-logos-top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.dolasol-logos-top img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  object-fit: contain;
+}
+
+.dolasol-logos-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.dolasol-logos-bottom img {
+  width: 30%;
+  max-width: 90px;
+  height: auto;
+  object-fit: contain;
+}
+
+.grid-dos-columnas {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  width: 100%;
+}
+
+.grid-dos-columnas img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .galeria-carrusel {
@@ -329,7 +398,6 @@ main {
   object-fit: cover;
   display: block;
 }
-
 
 @media (min-width: 720px) {
   #sobreMi h1 {
@@ -423,7 +491,7 @@ main {
     width: 40%;
   }
 
-  .contenedoresProyectos div h2 {
+  .contenedoresProyectos h2 {
     font-size: clamp(3rem, 4vw, 6rem);
   }
 
@@ -461,18 +529,27 @@ main {
     margin-left: auto;
   }
 
+  .proyecto-card .proyecto-titulo {
+    margin-bottom: 2rem;
+  }
+
   .proyecto-grid-medio {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     align-items: center;
+    width: 100%;
   }
 
   .proyecto-grid-medio img {
     max-width: 100%;
   }
 
-  .proyecto-texto p {
-    font-size: clamp(1rem, 1.5vw, 1.5625rem);
+  .grid-dos-columnas {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .proyecto-card:nth-of-type(odd) .proyecto-titulo {
+    text-align: right;
   }
 }
