@@ -281,10 +281,19 @@ main {
 .img-bottom {
   width: 100%;
   max-width: 100%;
-  aspect-ratio: 1730 / 910;
-  margin: 0 auto;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   display: block;
+  margin: 0 auto;
+}
+
+.img-portada-pequeña {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
 
 .proyecto-grid-medio {
@@ -293,19 +302,19 @@ main {
   gap: 30px;
 }
 
-.proyecto-grid-medio img {
+.proyecto-grid-medio > img {
   width: 100%;
   max-width: 500px;
-  aspect-ratio: 830 / 830;
+  height: auto;
+  object-fit: contain;
   margin: 0 auto;
-  object-fit: cover;
   display: block;
 }
 
 .proyecto-texto {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 }
 
 .proyecto-texto p {
@@ -318,7 +327,7 @@ main {
 .bloque-logos {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -326,10 +335,9 @@ main {
 
 .bloque-logos img {
   width: 100%;
-  max-width: 320px;
+  max-width: 100%;
   height: auto;
   object-fit: contain;
-  aspect-ratio: auto;
 }
 
 .fondo-negro {
@@ -339,8 +347,10 @@ main {
 .dolasol-logos-container {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 12px;
   width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .dolasol-logos-top {
@@ -348,11 +358,12 @@ main {
   flex-direction: column;
   gap: 10px;
   align-items: center;
+  width: 100%;
 }
 
 .dolasol-logos-top img {
   width: 100%;
-  max-width: 280px;
+  max-width: 100%;
   height: auto;
   object-fit: contain;
 }
@@ -362,12 +373,14 @@ main {
   justify-content: space-between;
   align-items: center;
   gap: 10px;
+  width: 100%;
 }
 
 .dolasol-logos-bottom img {
-  width: 30%;
-  max-width: 90px;
+  width: 31%;
+  max-width: 100%;
   height: auto;
+  aspect-ratio: 1 / 1;
   object-fit: contain;
 }
 
@@ -380,8 +393,49 @@ main {
 
 .grid-dos-columnas img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.proyecto-layout-especial {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.columna-izquierda {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.img-starter-pack {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+
+.columna-derecha {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-paquete-alto {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }
 
 .galeria-carrusel {
@@ -393,9 +447,9 @@ main {
 .galeria-carrusel img {
   width: 100%;
   max-width: 100%;
-  aspect-ratio: 1730 / 910;
+  height: auto;
+  object-fit: contain;
   margin: 0 auto;
-  object-fit: cover;
   display: block;
 }
 
@@ -541,7 +595,7 @@ main {
     width: 100%;
   }
 
-  .proyecto-grid-medio img {
+  .proyecto-grid-medio > img {
     max-width: 100%;
   }
 
@@ -551,5 +605,12 @@ main {
 
   .proyecto-card:nth-of-type(odd) .proyecto-titulo {
     text-align: right;
+  }
+
+  .proyecto-layout-especial {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
   }
 }
