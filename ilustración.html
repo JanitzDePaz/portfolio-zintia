@@ -6,13 +6,20 @@
     <title>Ilustración</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="imagenes/texto_portfolio.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
 </head>
 <body>
 
     <header class="main-header">
-        <a href="index.html#sobreMi">SOBRE MI</a>
-        <a href="index.html#proyectos">PROYECTOS</a>
-        <a href="index.html#contacto">CONTACTO</a>
+        <button class="menu-hamburguesa" aria-label="Menú">
+            <span class="material-symbols-outlined icono-menu">menu</span>
+            <span class="material-symbols-outlined icono-cerrar">close</span>
+        </button>
+        <nav class="nav-links">
+            <a href="index.html#sobreMi">SOBRE MI</a>
+            <a href="index.html#proyectos">PROYECTOS</a>
+            <a href="index.html#contacto">CONTACTO</a>
+        </nav>
     </header>
 
     <main class="container">
@@ -136,6 +143,7 @@
 
     </main>
 
-    <script src="carrusel.js"></script>
+    <script src="JS/carrusel.js"></script>
+    <script src="JS/menu_hamburguesa.js"></script>
 </body>
 </html>

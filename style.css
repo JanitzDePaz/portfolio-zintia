@@ -224,13 +224,46 @@ main {
   align-items: center;
   padding: 20px;
   width: 100%;
+  position: relative;
+  z-index: 100;
 }
 
-.main-header a {
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-links a {
   text-decoration: none;
   font-family: "Anton";
   color: #eb0e87;
   font-size: clamp(1.2rem, 4vw, 2.5rem);
+}
+
+.menu-hamburguesa {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.menu-hamburguesa .material-symbols-outlined {
+  font-size: 2.5rem;
+  color: #eb0e87;
+}
+
+.menu-hamburguesa .icono-cerrar {
+  display: none;
+}
+
+.menu-hamburguesa.activo .icono-menu {
+  display: none;
+}
+
+.menu-hamburguesa.activo .icono-cerrar {
+  display: block;
 }
 
 .container {
@@ -458,6 +491,35 @@ main {
 }
 
 @media (max-width: 719px) {
+  .menu-hamburguesa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    gap: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.activo {
+    display: flex;
+  }
+
+  .nav-links a {
+    font-size: 1.5rem;
+    color: #eb0e87;
+  }
+
   .img-portada,
   .img-portada-pequeña,
   .img-bottom,
