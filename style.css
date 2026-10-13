@@ -415,7 +415,7 @@ main {
 
 .img-starter-pack {
   width: 100%;
-  max-width: 520px;
+  max-width: 380px;
   height: auto;
   object-fit: contain;
   margin: 0 auto;
@@ -451,6 +451,108 @@ main {
   object-fit: contain;
   margin: 0 auto;
   display: block;
+}
+
+.carrusel-botones {
+  display: none;
+}
+
+@media (max-width: 719px) {
+  .img-portada,
+  .img-portada-pequeña,
+  .img-bottom,
+  .bloque-logos,
+  .dolasol-logos-container,
+  .dolasol-logos-top,
+  .dolasol-logos-bottom,
+  .grid-dos-columnas,
+  .columna-derecha,
+  .img-starter-pack,
+  .img-paquete-alto {
+    display: none !important;
+  }
+
+  .proyecto-grid-medio > img {
+    display: none !important;
+  }
+
+  .proyecto-grid-medio,
+  .proyecto-layout-especial {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 20px !important;
+  }
+
+  .proyecto-texto,
+  .columna-izquierda {
+    order: 1 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .proyecto-texto p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .carrusel-botones {
+    order: 2 !important;
+    display: flex !important;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .carrusel-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: 100%;
+    border-radius: 8px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .carrusel-track::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carrusel-track img {
+    display: block !important;
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    aspect-ratio: 4 / 3;
+    object-fit: cover !important;
+    scroll-snap-align: center;
+    border-radius: 8px;
+  }
+
+  .btn-carrusel {
+    background-color: #eb0e87;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .btn-carrusel:active {
+    transform: scale(0.95);
+  }
 }
 
 @media (min-width: 720px) {
